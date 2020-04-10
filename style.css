@@ -1,0 +1,209 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  position: absolute;
+  transition: ease;
+  z-index: 100;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  top: 70px;
+  left: 100px;
+  text-transform: uppercase;
+  background-color: rgba(237, 94, 29, 0.7);
+  padding: 25px;
+  border-radius: 30px;
+}
+
+.my-name {
+  position: absolute;
+  transition: ease;
+  z-index: 100;
+  font-size: 18px;
+  color: white;
+  top: 15px;
+  left: 985px;
+  padding: 5px;
+  background-color: rgba(155, 154, 152, 0.7);
+  border-radius: 30px;
+}
+
+.search-container {
+  position: absolute;
+  z-index: 100;
+  left: 100px;
+  top: 195px;
+  width: 400px;
+  height: 60px;
+  background-color: #454e53;
+  border-radius: 44px;
+  display: flex;
+}
+
+.search-container .search {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.search-container input {
+  border: none;
+  width: 100%;
+  font-size: 25px;
+  background-color: transparent;
+  color: white;
+}
+
+.search-container input:focus {
+  outline: none;
+}
+
+.search i {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.store-list-container {
+  background: whitesmoke;
+  width: 400px;
+  position: absolute;
+  z-index: 100;
+  left: 100px;
+  top: 275px;
+  border-radius: 44px;
+  bottom: 20px;
+  overflow-y: hidden;
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.store-container {
+  display: flex;
+  border-bottom: 1px solid #979797;
+  cursor: pointer;
+}
+
+.store-address {
+  /* position: absolute;*/
+  font-size: 20px;
+  /* align-items: center;*/
+  color: #514c4c;
+  margin-top: 30px;
+}
+
+.store-phone-number {
+  font-size: 12px;
+  color: #615a5a;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.border-line {
+  position: absolute;
+  z-index: 100;
+  top: 80px;
+}
+
+.store-number-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-number {
+  background-color: #454e53;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  font-size: 12px;
+  color: #b5adad;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.store-info-container {
+  flex-grow: 1;
+}
+
+.store-address span {
+  display: block;
+}
+
+.store-container-background {
+  display: flex;
+  flex-grow: 1;
+  border-radius: 18px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 12px;
+  margin-top: 18px;
+  transition: all 0.1s ease-in-out;
+}
+
+.store-container-background:hover {
+  background-color: rgba(237, 94, 29, 0.5);
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+.store-list {
+  width: 400px;
+  overflow-y: scroll;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: whitesmoke;
+}
+
+.store-info-window {
+  min-width: 300px;
+  font-size: 18px;
+  padding: 8px;
+}
+
+.store-info-name {
+  font-weight: bold;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.store-info-status {
+  margin-top: 6px;
+  border-bottom: 1px solid #00000029;
+  padding-bottom: 6px;
+}
+
+.store-info-address,
+.store-info-phone {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.store-info-address .circle,
+.store-info-phone .circle {
+  width: 30px;
+  height: 30px;
+  background-color: #1985a1;
+  color: white;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 8px;
+}
